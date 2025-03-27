@@ -86,9 +86,6 @@
             android:exported="false"
             android:name="com.pro.shopfee.activity.ChangePasswordActivity" />
 
-        <activity
-            android:exported="false"
-            android:name="com.pro.shopfee.activity.ContactActivity" />
 
         <activity
             android:exported="false"
