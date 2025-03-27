@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Movie Ticket Booking</string>
+    <string name="short_app_name" translatable="false">MVB</string>
+    <string name="hello">File này chứa các chuỗi tiếng Viet </string>
+    <string name="select_language">Lựa chọn ngôn ngữ</string>
+    <string name="select_label">Ok!</string>
+
+    <string name="welcome_content">Chào mừng bạn đến với Movie Ticket Booking! Trải nghiệm đặt vé nhanh chóng và tiện lợi ngay hôm nay! 🎬🍿</string>
+    <string name="policy_welcome">Khi đăng nhập hoặc đăng ký, bạn đồng ý với Điều khoản Dịch vụ và Chính sách Bảo mật của chúng tôi.</string>
+    <string name="language_type">🇻🇳 Vietnamese</string>
+    <string name="sign_in">Đăng Nhập</string>
+    <string name="sign_up">Đăng Ký</string>
+
+    <string name="description_poster1">Incantation - Lời Nguyền Kinh Hoàng!</string>
+    <string name="description_poster2">The Medium - Quỷ Nhập Đầy Ám Ảnh!</string>
+    <string name="description_poster3">The Pope\'s Exorcist - Đối Đầu Tà Ác Tột Cùng!</string>
+</resources>
