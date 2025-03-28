@@ -14,7 +14,6 @@ import androidx.fragment.app.Fragment;
 
 import com.example.coffeeshop.R;
 import com.pro.shopfee.activity.ChangePasswordActivity;
-import com.pro.shopfee.activity.ContactActivity;
 import com.pro.shopfee.activity.FeedbackActivity;
 import com.pro.shopfee.activity.LoginActivity;
 import com.pro.shopfee.activity.MainActivity;
@@ -61,7 +60,6 @@ public class AccountFragment extends Fragment {
         TextView tvUsername = mView.findViewById(R.id.tv_username);
         tvUsername.setText(DataStoreManager.getUser().getEmail());
         layoutFeedback = mView.findViewById(R.id.layout_feedback);
-        layoutContact = mView.findViewById(R.id.layout_contact);
         layoutChangePassword = mView.findViewById(R.id.layout_change_password);
         layoutSignOut = mView.findViewById(R.id.layout_sign_out);
     }
@@ -69,8 +67,6 @@ public class AccountFragment extends Fragment {
     private void initListener() {
         layoutFeedback.setOnClickListener(view ->
                 GlobalFunction.startActivity(getActivity(), FeedbackActivity.class));
-        layoutContact.setOnClickListener(view ->
-                GlobalFunction.startActivity(getActivity(), ContactActivity.class));
         layoutChangePassword.setOnClickListener(view ->
                 GlobalFunction.startActivity(getActivity(), ChangePasswordActivity.class));
         layoutSignOut.setOnClickListener(view -> onClickSignOut());

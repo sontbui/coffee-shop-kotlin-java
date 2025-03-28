@@ -123,19 +123,25 @@ public class LoginActivity extends BaseActivity {
         } else if (!StringUtil.isValidEmail(strEmail)) {
             showToastMessage(getString(R.string.msg_email_invalid));
         } else {
-            if (rdbAdmin.isChecked()) {
-                if (!strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)) {
-                    Toast.makeText(this, getString(R.string.msg_email_invalid_admin), Toast.LENGTH_SHORT).show();
-                } else {
-                    loginUserFirebase(strEmail, strPassword);
-                }
-            } else {
-                if (strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)) {
-                    Toast.makeText(this, getString(R.string.msg_email_invalid_user), Toast.LENGTH_SHORT).show();
-                } else {
-                    loginUserFirebase(strEmail, strPassword);
-                }
+            if(strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)){
+                loginUserFirebase(strEmail, strPassword);
             }
+            else{
+                loginUserFirebase(strEmail, strPassword);
+            }
+//            if (rdbAdmin.isChecked()) {
+//                if (!strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)) {
+//                    Toast.makeText(this, getString(R.string.msg_email_invalid_admin), Toast.LENGTH_SHORT).show();
+//                } else {
+//                    loginUserFirebase(strEmail, strPassword);
+//                }
+//            } else {
+//                if (strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)) {
+//                    Toast.makeText(this, getString(R.string.msg_email_invalid_user), Toast.LENGTH_SHORT).show();
+//                } else {
+//                    loginUserFirebase(strEmail, strPassword);
+//                }
+//            }
         }
     }
 
