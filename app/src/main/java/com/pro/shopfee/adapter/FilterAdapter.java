@@ -107,3 +107,4 @@ public class FilterAdapter extends RecyclerView.Adapter<FilterAdapter.FilterView
         }
     }
 }
+//fix
