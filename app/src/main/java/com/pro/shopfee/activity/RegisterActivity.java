@@ -25,7 +25,7 @@ public class RegisterActivity extends BaseActivity {
     private EditText edtPassword;
     private Button btnRegister;
     private LinearLayout layoutLogin;
-    private RadioButton rdbAdmin, rdbUser;
+//    private RadioButton rdbAdmin, rdbUser;
     private boolean isEnableButtonRegister;
 
     @Override
@@ -42,12 +42,12 @@ public class RegisterActivity extends BaseActivity {
         edtPassword = findViewById(R.id.edt_password);
         btnRegister = findViewById(R.id.btn_register);
         layoutLogin = findViewById(R.id.layout_login);
-        rdbAdmin = findViewById(R.id.rdb_admin);
-        rdbUser = findViewById(R.id.rdb_user);
+//        rdbAdmin = findViewById(R.id.rdb_admin);
+//        rdbUser = findViewById(R.id.rdb_user);
     }
 
     private void initListener() {
-        rdbUser.setChecked(true);
+//        rdbUser.setChecked(true);
         edtEmail.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
@@ -116,19 +116,7 @@ public class RegisterActivity extends BaseActivity {
         } else if (!StringUtil.isValidEmail(strEmail)) {
             showToastMessage(getString(R.string.msg_email_invalid));
         } else {
-            if (rdbAdmin.isChecked()) {
-                if (!strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)) {
-                    Toast.makeText(this, getString(R.string.msg_email_invalid_admin), Toast.LENGTH_SHORT).show();
-                } else {
-                    registerUserFirebase(strEmail, strPassword);
-                }
-            } else {
-                if (strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)) {
-                    Toast.makeText(this, getString(R.string.msg_email_invalid_user), Toast.LENGTH_SHORT).show();
-                } else {
-                    registerUserFirebase(strEmail, strPassword);
-                }
-            }
+            registerUserFirebase(strEmail, strPassword);
         }
     }
 
