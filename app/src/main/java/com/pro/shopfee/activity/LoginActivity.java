@@ -27,7 +27,7 @@ public class LoginActivity extends BaseActivity {
     private Button btnLogin;
     private LinearLayout layoutRegister;
     private TextView tvForgotPassword;
-    private RadioButton rdbAdmin, rdbUser;
+
     private boolean isEnableButtonLogin;
 
     @Override
@@ -45,12 +45,10 @@ public class LoginActivity extends BaseActivity {
         btnLogin = findViewById(R.id.btn_login);
         layoutRegister = findViewById(R.id.layout_register);
         tvForgotPassword = findViewById(R.id.tv_forgot_password);
-        rdbAdmin = findViewById(R.id.rdb_admin);
-        rdbUser = findViewById(R.id.rdb_user);
     }
 
     private void initListener() {
-        rdbUser.setChecked(true);
+
         edtEmail.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
