@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "85336367532",
+    "firebase_url": "https://cafemanagerpro-default-rtdb.firebaseio.com",
+    "project_id": "cafemanagerpro",
+    "storage_bucket": "cafemanagerpro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85336367532:android:3d0061a02d7e05c3e69a09",
+        "android_client_info": {
+          "package_name": "com.pro.shopfee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3kxrFMjLsCpalErhxWEFD_lPEyjKY2Vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
