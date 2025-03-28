@@ -24,6 +24,7 @@ import java.util.List;
 public class AdminFeedbackActivity extends BaseActivity {
 
     private List<Feedback> listFeedback;
+
     private AdminFeedbackAdapter adminFeedbackAdapter;
     private ValueEventListener mValueEventListener;
 
