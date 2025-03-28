@@ -61,27 +61,6 @@
                 android:textSize="@dimen/text_size_small" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/layout_contact"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/define_dimen_30"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_contact" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/contact"
-                android:layout_marginStart="@dimen/define_dimen_10"
-                android:textColor="@color/textColorHeading"
-                android:textSize="@dimen/text_size_small" />
-        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/layout_change_password"
