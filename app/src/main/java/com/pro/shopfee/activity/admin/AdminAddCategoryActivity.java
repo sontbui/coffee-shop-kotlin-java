@@ -31,7 +31,6 @@ public class AdminAddCategoryActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_add_category);
-
         loadDataIntent();
         initUi();
         initView();
@@ -50,7 +49,6 @@ public class AdminAddCategoryActivity extends BaseActivity {
         tvToolbarTitle = findViewById(R.id.tv_toolbar_title);
         edtName = findViewById(R.id.edt_name);
         btnAddOrEdit = findViewById(R.id.btn_add_or_edit);
-
         imgToolbarBack.setOnClickListener(view -> onBackPressed());
         btnAddOrEdit.setOnClickListener(v -> addOrEditCategory());
     }
@@ -59,7 +57,6 @@ public class AdminAddCategoryActivity extends BaseActivity {
         if (isUpdate) {
             tvToolbarTitle.setText(getString(R.string.label_update_category));
             btnAddOrEdit.setText(getString(R.string.action_edit));
-
             edtName.setText(mCategory.getName());
         } else {
             tvToolbarTitle.setText(getString(R.string.label_add_category));
